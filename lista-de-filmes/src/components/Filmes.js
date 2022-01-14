@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import './Filmes.css';
 import { Link } from 'react-router-dom'
 
-
-
 class Filmes extends Component {
 
   render() {

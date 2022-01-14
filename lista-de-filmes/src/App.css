@@ -1,6 +1,6 @@
 .App {
   background-size: cover;
-  background: linear-gradient(-45deg, #0b0c0c, #125269, #125269, #0b0c0c);
+  background: linear-gradient(-45deg, #085f5f, #175f79, #1a5368, #247272);
   color: white;
   padding: 40px 20px;
   text-align: center;
@@ -14,11 +14,10 @@
 }
 
 h3 {
-  color: white;
+  color: rgb(3, 3, 3);
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
 }
-

@@ -33,7 +33,7 @@ class Home extends Component {
               <section key={filme.id}>
                 <Filmes
                   title={filme.title}
-                  poster_path={`https://www.themoviedb.org/t/p/w220_and_h330_face${filmes.poster_path}`}
+                  poster_path={`https://www.themoviedb.org/t/p/w220_and_h330_face${filme.poster_path}`}
                 />
               </section>
 
