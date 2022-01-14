@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 
 class Rotas extends React.Component {
 
@@ -18,10 +19,18 @@ class Rotas extends React.Component {
   }
 
   render() {
+    const { filmes } = this.state
     return (
-        <h1>
-          Rotas
-        </h1>
+      <div>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route
+            path="/:slug"
+            render={(propRoute) => (<Filme02 {...propRoute} charact={filmes} />)} />
+          <Route path="*" component={NotFound} />
+
+        </Switch>
+      </div>
     )
   }
 }
