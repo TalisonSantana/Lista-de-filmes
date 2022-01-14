@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Filmes from './Filmes';
 
 class Home extends Component {
 
@@ -18,12 +19,29 @@ class Home extends Component {
   }
 
   render() {
+    const { filmes } = this.state;
     return (
-      
+      <div className="App">
+        <header>
           <h1>
             Filmes Mais Polulares:
           </h1>
-        
+        </header>
+        <main className="body">
+          {filmes.map((filme) => {
+            return (
+              <section key={filme.id}>
+                <Filmes
+                  title={filme.title}
+                  poster_path={`https://www.themoviedb.org/t/p/w220_and_h330_face${filmes.poster_path}`}
+                />
+              </section>
+
+            )
+          })}
+        </main>
+
+      </div>
     );
   }
 }
