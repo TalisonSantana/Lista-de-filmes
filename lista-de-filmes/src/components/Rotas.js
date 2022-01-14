@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-
+import Home from './Home'
 class Rotas extends React.Component {
 
   constructor(props) {
@@ -26,7 +26,7 @@ class Rotas extends React.Component {
           <Route exact path="/" component={Home} />
           <Route
             path="/:slug"
-            render={(propRoute) => (<Filme02 {...propRoute} charact={filmes} />)} />
+            render={(propRoute) => (<DetailsMovie {...propRoute} charact={filmes} />)} />
           <Route path="*" component={NotFound} />
 
         </Switch>
