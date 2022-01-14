@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
+import { BrowserRouter } from 'react-router-dom'
+import Rotas from './components/Rotas';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>
-        Filmes favoritos
-      </h1>
-    </div>
-  );
+class App extends Component {
+
+  render() {
+    return (
+      <main className="App">
+        <BrowserRouter >
+          <Rotas />
+        </BrowserRouter>
+      </main>
+    );
+  }
 }
 
 export default App;
+
