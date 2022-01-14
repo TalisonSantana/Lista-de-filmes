@@ -1,0 +1,14 @@
+.container {
+  border-radius: 2px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  margin: 5px;
+  width: 300px;
+}
+
+ul{
+  list-style-type: none;
+  
+}
